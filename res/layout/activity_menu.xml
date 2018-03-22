@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="studio.opclound.game_animals.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        >
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="PLAY"
+            android:textColor="@android:color/holo_blue_dark"
+            android:background="@drawable/button_selector"
+            android:textSize="25dp"
+            android:onClick="clkPlay"
+            />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="SETTINGS"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:background="@android:color/white"
+            android:textSize="25dp"
+            android:onClick="clkSetting"/>
+    </LinearLayout>
+</RelativeLayout>
