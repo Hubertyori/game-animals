@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg_land"
     android:orientation="vertical"
     tools:context="studio.opclound.game_animals.MenuActivity">
 
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="200dp"
         >
 
         <Button
@@ -35,7 +35,7 @@
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:text="EXIT"
+            android:text="SETTINGS"
             android:layout_marginTop="5dp"
             android:textColor="@android:color/holo_blue_dark"
             android:background="@android:color/white"
