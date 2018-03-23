@@ -1,14 +1,17 @@
 # Animals
 ######Assigenment 002 #######################
+
 ![my_Game Animals](https://github.com/Hubertyori/game-animals/blob/master/SVID_20180323_225905_20180323230534.gif)
 
 The land virsion layout
+
 ![my_Game Animals_land](https://github.com/Hubertyori/game-animals/blob/master/SVID_20180323_225946_20180323230309.gif)
 
 I make the game changing every time, and I add two numbers, the white one is for the correct times and the other is for the wrong times.
 
 I make my random changing function by using the following code:
- `private int[] mysetImage() {
+
+ `  private int[] mysetImage() {
         Random random = new Random();
         int tempint[] = new int[4];
         for (int i = 0; i < 4; i++) {
@@ -16,7 +19,7 @@ I make my random changing function by using the following code:
         }
         tempint = chickIntArry(tempint);
         return tempint;
-    }
+     }
 
     private int[] chickIntArry(int[] tempint) {
         Random random = new Random();
@@ -53,6 +56,7 @@ And the following code is the way I transfer the number of winning times and los
     }
     
 And when I pressed play again, I give them back.
+
     public void clkPlayagain(View view) {
         Intent intent = getIntent();
         //获取传递的值
