@@ -11,7 +11,7 @@ I make the game changing every time, and I add two numbers, the white one is for
 
 I make my random changing function by using the following code:
 
- `  private int[] mysetImage() {
+    private int[] mysetImage() {
         Random random = new Random();
         int tempint[] = new int[4];
         for (int i = 0; i < 4; i++) {
@@ -19,8 +19,8 @@ I make my random changing function by using the following code:
         }
         tempint = chickIntArry(tempint);
         return tempint;
-     }
-
+    }
+    
     private int[] chickIntArry(int[] tempint) {
         Random random = new Random();
         for (int i = 0; i < tempint.length; i++) {
@@ -68,5 +68,21 @@ And when I pressed play again, I give them back.
         startActivity(myintent);
         LoseActivity.this.finish();
     }
+    
+An other question is how to use the .ttf files.
+I use the following code to finish it:
+
+        TextView Count = findViewById(R.id.losecount);
+        Count.setText(String.valueOf(losecount));
+        Count = findViewById(R.id.wincount);
+        Count.setText(String.valueOf(wincount));
+
+        typeface = Typeface.createFromAsset(getAssets(), "Fonts/font_one.TTF");
+        TextView tex = findViewById(R.id.textView);
+        tex.setTypeface(typeface);
+        tex = findViewById(R.id.textView);
+        tex.setTypeface(typeface);
+        
+        
 
 ![Game Animals](display/demo.gif)
