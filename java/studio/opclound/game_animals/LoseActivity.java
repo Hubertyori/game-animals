@@ -24,8 +24,14 @@ public class LoseActivity extends AppCompatActivity {
     }
 
     public void clkPlayagain(View view) {
-        Intent intent = new Intent(LoseActivity.this,MainActivity.class);
-        startActivity(intent);
+        Intent intent = getIntent();
+        //获取传递的值
+        int winint = intent.getIntExtra("windata",0);
+        int loseint = intent.getIntExtra("losedata",0);
+        Intent myintent = new Intent(LoseActivity.this,MainActivity.class);
+        myintent.putExtra("windata",winint);
+        myintent.putExtra("losedata",loseint);
+        startActivity(myintent);
         LoseActivity.this.finish();
     }
 }

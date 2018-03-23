@@ -32,10 +32,14 @@ public class MenuActivity extends AppCompatActivity {
     public void clkPlay(View view) {
         Intent itent=new Intent();
         itent.setClass(MenuActivity.this, MainActivity.class);
+        itent.putExtra("windata",0);
+        itent.putExtra("losedata",0);
         startActivity(itent);
         MenuActivity.this.finish();
     }
 
-    public void clkSetting(View view) {
+
+    public void clkExit(View view) {
+        MenuActivity.this.finish();
     }
 }
