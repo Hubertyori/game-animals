@@ -1,5 +1,7 @@
 # Animals
 
+The new project file is in the src file
+
 ######Part 3#################################
 
 I changed the game baseded on both my project and the project of lab class.
